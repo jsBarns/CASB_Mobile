@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD0F1C6D218B985500B2CCE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F1C6C218B985500B2CCE1 /* AppDelegate.swift */; };
+		DD0F1C6F218B985500B2CCE1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F1C6E218B985500B2CCE1 /* TableViewController.swift */; };
+		DD0F1C72218B985500B2CCE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0F1C70218B985500B2CCE1 /* Main.storyboard */; };
+		DD0F1C74218B985800B2CCE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0F1C73218B985800B2CCE1 /* Assets.xcassets */; };
+		DD0F1C77218B985800B2CCE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0F1C75218B985800B2CCE1 /* LaunchScreen.storyboard */; };
+		DD0F1C82218B985800B2CCE1 /* CASB_Mobile_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F1C81218B985800B2CCE1 /* CASB_Mobile_AppTests.swift */; };
+		DD0F1C8D218B985800B2CCE1 /* CASB_Mobile_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F1C8C218B985800B2CCE1 /* CASB_Mobile_AppUITests.swift */; };
+		DD0F1C9D218B9BEA00B2CCE1 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F1C9C218B9BEA00B2CCE1 /* UserTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD0F1C7E218B985800B2CCE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD0F1C61218B985500B2CCE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD0F1C68218B985500B2CCE1;
+			remoteInfo = "CASB Mobile App";
+		};
+		DD0F1C89218B985800B2CCE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD0F1C61218B985500B2CCE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD0F1C68218B985500B2CCE1;
+			remoteInfo = "CASB Mobile App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD0F1C69218B985500B2CCE1 /* CASB Mobile App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CASB Mobile App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0F1C6C218B985500B2CCE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD0F1C6E218B985500B2CCE1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DD0F1C71218B985500B2CCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD0F1C73218B985800B2CCE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD0F1C76218B985800B2CCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD0F1C78218B985800B2CCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0F1C7D218B985800B2CCE1 /* CASB Mobile AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CASB Mobile AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0F1C81218B985800B2CCE1 /* CASB_Mobile_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASB_Mobile_AppTests.swift; sourceTree = "<group>"; };
+		DD0F1C83218B985800B2CCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0F1C88218B985800B2CCE1 /* CASB Mobile AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CASB Mobile AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0F1C8C218B985800B2CCE1 /* CASB_Mobile_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASB_Mobile_AppUITests.swift; sourceTree = "<group>"; };
+		DD0F1C8E218B985800B2CCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0F1C9C218B9BEA00B2CCE1 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD0F1C66218B985500B2CCE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0F1C7A218B985800B2CCE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0F1C85218B985800B2CCE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD0F1C60218B985500B2CCE1 = {
+			isa = PBXGroup;
+			children = (
+				DD0F1C6B218B985500B2CCE1 /* CASB Mobile App */,
+				DD0F1C80218B985800B2CCE1 /* CASB Mobile AppTests */,
+				DD0F1C8B218B985800B2CCE1 /* CASB Mobile AppUITests */,
+				DD0F1C6A218B985500B2CCE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD0F1C6A218B985500B2CCE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD0F1C69218B985500B2CCE1 /* CASB Mobile App.app */,
+				DD0F1C7D218B985800B2CCE1 /* CASB Mobile AppTests.xctest */,
+				DD0F1C88218B985800B2CCE1 /* CASB Mobile AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD0F1C6B218B985500B2CCE1 /* CASB Mobile App */ = {
+			isa = PBXGroup;
+			children = (
+				DD0F1C6C218B985500B2CCE1 /* AppDelegate.swift */,
+				DD0F1C6E218B985500B2CCE1 /* TableViewController.swift */,
+				DD0F1C9C218B9BEA00B2CCE1 /* UserTableViewCell.swift */,
+				DD0F1C70218B985500B2CCE1 /* Main.storyboard */,
+				DD0F1C73218B985800B2CCE1 /* Assets.xcassets */,
+				DD0F1C75218B985800B2CCE1 /* LaunchScreen.storyboard */,
+				DD0F1C78218B985800B2CCE1 /* Info.plist */,
+			);
+			path = "CASB Mobile App";
+			sourceTree = "<group>";
+		};
+		DD0F1C80218B985800B2CCE1 /* CASB Mobile AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD0F1C81218B985800B2CCE1 /* CASB_Mobile_AppTests.swift */,
+				DD0F1C83218B985800B2CCE1 /* Info.plist */,
+			);
+			path = "CASB Mobile AppTests";
+			sourceTree = "<group>";
+		};
+		DD0F1C8B218B985800B2CCE1 /* CASB Mobile AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD0F1C8C218B985800B2CCE1 /* CASB_Mobile_AppUITests.swift */,
+				DD0F1C8E218B985800B2CCE1 /* Info.plist */,
+			);
+			path = "CASB Mobile AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD0F1C68218B985500B2CCE1 /* CASB Mobile App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0F1C91218B985800B2CCE1 /* Build configuration list for PBXNativeTarget "CASB Mobile App" */;
+			buildPhases = (
+				DD0F1C65218B985500B2CCE1 /* Sources */,
+				DD0F1C66218B985500B2CCE1 /* Frameworks */,
+				DD0F1C67218B985500B2CCE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CASB Mobile App";
+			productName = "CASB Mobile App";
+			productReference = DD0F1C69218B985500B2CCE1 /* CASB Mobile App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD0F1C7C218B985800B2CCE1 /* CASB Mobile AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0F1C94218B985800B2CCE1 /* Build configuration list for PBXNativeTarget "CASB Mobile AppTests" */;
+			buildPhases = (
+				DD0F1C79218B985800B2CCE1 /* Sources */,
+				DD0F1C7A218B985800B2CCE1 /* Frameworks */,
+				DD0F1C7B218B985800B2CCE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD0F1C7F218B985800B2CCE1 /* PBXTargetDependency */,
+			);
+			name = "CASB Mobile AppTests";
+			productName = "CASB Mobile AppTests";
+			productReference = DD0F1C7D218B985800B2CCE1 /* CASB Mobile AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD0F1C87218B985800B2CCE1 /* CASB Mobile AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0F1C97218B985800B2CCE1 /* Build configuration list for PBXNativeTarget "CASB Mobile AppUITests" */;
+			buildPhases = (
+				DD0F1C84218B985800B2CCE1 /* Sources */,
+				DD0F1C85218B985800B2CCE1 /* Frameworks */,
+				DD0F1C86218B985800B2CCE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD0F1C8A218B985800B2CCE1 /* PBXTargetDependency */,
+			);
+			name = "CASB Mobile AppUITests";
+			productName = "CASB Mobile AppUITests";
+			productReference = DD0F1C88218B985800B2CCE1 /* CASB Mobile AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD0F1C61218B985500B2CCE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jack Barnett";
+				TargetAttributes = {
+					DD0F1C68218B985500B2CCE1 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DD0F1C7C218B985800B2CCE1 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DD0F1C68218B985500B2CCE1;
+					};
+					DD0F1C87218B985800B2CCE1 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DD0F1C68218B985500B2CCE1;
+					};
+				};
+			};
+			buildConfigurationList = DD0F1C64218B985500B2CCE1 /* Build configuration list for PBXProject "CASB Mobile App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD0F1C60218B985500B2CCE1;
+			productRefGroup = DD0F1C6A218B985500B2CCE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD0F1C68218B985500B2CCE1 /* CASB Mobile App */,
+				DD0F1C7C218B985800B2CCE1 /* CASB Mobile AppTests */,
+				DD0F1C87218B985800B2CCE1 /* CASB Mobile AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD0F1C67218B985500B2CCE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0F1C77218B985800B2CCE1 /* LaunchScreen.storyboard in Resources */,
+				DD0F1C74218B985800B2CCE1 /* Assets.xcassets in Resources */,
+				DD0F1C72218B985500B2CCE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0F1C7B218B985800B2CCE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0F1C86218B985800B2CCE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD0F1C65218B985500B2CCE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0F1C6F218B985500B2CCE1 /* TableViewController.swift in Sources */,
+				DD0F1C9D218B9BEA00B2CCE1 /* UserTableViewCell.swift in Sources */,
+				DD0F1C6D218B985500B2CCE1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0F1C79218B985800B2CCE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0F1C82218B985800B2CCE1 /* CASB_Mobile_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0F1C84218B985800B2CCE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0F1C8D218B985800B2CCE1 /* CASB_Mobile_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD0F1C7F218B985800B2CCE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD0F1C68218B985500B2CCE1 /* CASB Mobile App */;
+			targetProxy = DD0F1C7E218B985800B2CCE1 /* PBXContainerItemProxy */;
+		};
+		DD0F1C8A218B985800B2CCE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD0F1C68218B985500B2CCE1 /* CASB Mobile App */;
+			targetProxy = DD0F1C89218B985800B2CCE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD0F1C70218B985500B2CCE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0F1C71218B985500B2CCE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD0F1C75218B985800B2CCE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0F1C76218B985800B2CCE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD0F1C8F218B985800B2CCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD0F1C90218B985800B2CCE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD0F1C92218B985800B2CCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CASB Mobile App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oracle.CASB-Mobile-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD0F1C93218B985800B2CCE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CASB Mobile App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oracle.CASB-Mobile-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD0F1C95218B985800B2CCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CASB Mobile AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oracle.CASB-Mobile-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CASB Mobile App.app/CASB Mobile App";
+			};
+			name = Debug;
+		};
+		DD0F1C96218B985800B2CCE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CASB Mobile AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oracle.CASB-Mobile-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CASB Mobile App.app/CASB Mobile App";
+			};
+			name = Release;
+		};
+		DD0F1C98218B985800B2CCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CASB Mobile AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oracle.CASB-Mobile-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CASB Mobile App";
+			};
+			name = Debug;
+		};
+		DD0F1C99218B985800B2CCE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CASB Mobile AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oracle.CASB-Mobile-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CASB Mobile App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD0F1C64218B985500B2CCE1 /* Build configuration list for PBXProject "CASB Mobile App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0F1C8F218B985800B2CCE1 /* Debug */,
+				DD0F1C90218B985800B2CCE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0F1C91218B985800B2CCE1 /* Build configuration list for PBXNativeTarget "CASB Mobile App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0F1C92218B985800B2CCE1 /* Debug */,
+				DD0F1C93218B985800B2CCE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0F1C94218B985800B2CCE1 /* Build configuration list for PBXNativeTarget "CASB Mobile AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0F1C95218B985800B2CCE1 /* Debug */,
+				DD0F1C96218B985800B2CCE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0F1C97218B985800B2CCE1 /* Build configuration list for PBXNativeTarget "CASB Mobile AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0F1C98218B985800B2CCE1 /* Debug */,
+				DD0F1C99218B985800B2CCE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD0F1C61218B985500B2CCE1 /* Project object */;
+}
