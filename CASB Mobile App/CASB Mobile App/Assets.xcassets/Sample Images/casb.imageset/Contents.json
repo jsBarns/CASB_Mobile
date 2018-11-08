@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "loric_login-logo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "download (2).png",
       "scale" : "2x"
     },
     {

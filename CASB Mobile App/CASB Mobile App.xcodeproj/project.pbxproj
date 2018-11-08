@@ -15,6 +15,7 @@
 		DD0F1C8D218B985800B2CCE1 /* CASB_Mobile_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F1C8C218B985800B2CCE1 /* CASB_Mobile_AppUITests.swift */; };
 		DD0F1C9D218B9BEA00B2CCE1 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F1C9C218B9BEA00B2CCE1 /* UserTableViewCell.swift */; };
 		DD705BDF218CC15B00F9A5EA /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD705BDE218CC15B00F9A5EA /* UserTableViewController.swift */; };
+		DD705C1B2190F10600F9A5EA /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD705C1A2190F10600F9A5EA /* StartingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DD0F1C8E218B985800B2CCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD0F1C9C218B9BEA00B2CCE1 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		DD705BDE218CC15B00F9A5EA /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		DD705C1A2190F10600F9A5EA /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				DD0F1C6C218B985500B2CCE1 /* AppDelegate.swift */,
+				DD705C1A2190F10600F9A5EA /* StartingViewController.swift */,
 				DD705BDE218CC15B00F9A5EA /* UserTableViewController.swift */,
 				DD0F1C9C218B9BEA00B2CCE1 /* UserTableViewCell.swift */,
 				DD0F1C70218B985500B2CCE1 /* Main.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				DD0F1C9D218B9BEA00B2CCE1 /* UserTableViewCell.swift in Sources */,
 				DD705BDF218CC15B00F9A5EA /* UserTableViewController.swift in Sources */,
+				DD705C1B2190F10600F9A5EA /* StartingViewController.swift in Sources */,
 				DD0F1C6D218B985500B2CCE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

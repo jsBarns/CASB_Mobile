@@ -19,11 +19,16 @@ class UserTableViewController: UITableViewController {
         let date: Any
     }
     
+    var accessToken: String = ""
+    var tenantID: String = ""
+    
     var usersClean:[User] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        getDataForUsers()
+                
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,9 +41,6 @@ class UserTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        
-        getDataForUsers()
-        
         return 1
     }
 
@@ -46,7 +48,6 @@ class UserTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return usersClean.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellID = "UserTableViewCell"
@@ -56,13 +57,27 @@ class UserTableViewController: UITableViewController {
         }
         
         let user = usersClean[indexPath.row]
+        let ratingString = (user.riskScore as! String)
+        let ratingInt = (ratingString as NSString).integerValue
         
-        cell.appInstanceLabel.text = (user.appInstance as! String)
-        cell.appNameLabel.text = (user.appName as! String)
-        cell.dateLabel.text = (user.date as! String)
-        cell.riskLevelLabel.text = (user.riskLevel as! String)
-        cell.riskScoreLabel.text = (user.riskScore as! String)
+        cell.appInstanceLabel.text = "Instance: " + (user.appInstance as! String)
+        cell.appNameLabel.text = "Name: " + (user.appName as! String)
+        
+//        cell.dateLabel.text = (user.date as! String)
+        var tempStr = (user.date as! String).components(separatedBy: "T")
+        cell.dateLabel.text = tempStr[0]
+        
+        cell.riskLevelLabel.text = "Risk Level: " + (user.riskLevel as! String)
+        cell.riskScoreLabel.text = "Risk Score: " + (user.riskScore as! String)
         cell.usernameLabel.text = (user.userName as! String)
+        
+        if (ratingInt >= 80) {
+            cell.photoImageView.image = UIImage(named: "red")
+        } else if (ratingInt >= 60) {
+            cell.photoImageView.image = UIImage(named: "yellow")
+        } else {
+            cell.photoImageView.image = UIImage(named: "green")
+        }
         
         return cell
     }
@@ -116,13 +131,13 @@ class UserTableViewController: UITableViewController {
     func getDataForUsers() {
         
         let headers = [
-            "Authorization": "Bearer v2.0S99glkci3rN78sAmIq8ihG2mhztc0pFjug1lZZjJ6k5CyqBRYlPmKMqP5j3OEgoh+Un285nuAEVbTMNUIm/hh7JeiYeEnp0awjtbnO2/A0Mv6QRwtlVb3AJdABW8+0V0R1IReHhI1NahWp9ydQgJNHThd8b3hws9fuATKR7kZZIan7m2ehHeSl4Gapr8RelhMJhGhnL8C1J8Mqx1PmWmesTYUz/tkRHKiWhaX3QPE4Quwof22ejLL5MqByRaQ4jtsQUYR3myb9egV2wkeNMyyvwkOXnVzlDMyQ5u1Smlrk1gIieEgv2byPeNp+Oug1gxHbasDS5oG8rNL1Jj0pds7kvgp/WkAcXIG9IJyUzGlIgMiLRr16wNJU+DGqHKXUaZebyxOl5S7eVKimSBEe2q3Q==",
-            "X-Apprity-Tenant-Id": "96927836-eacd-4723-8efc-d49a404f8513",
+            "Authorization": "Bearer \(self.accessToken)",
+            "X-Apprity-Tenant-Id": self.tenantID,
             "Cache-Control": "no-cache",
             "Postman-Token": "70f5c3cb-f94d-46c0-8cf1-d56dd900d949"
         ]
         
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api-trial.palerra.net/api/v1/reports/details/userrisk/?pagesize=2")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api-trial.palerra.net/api/v1/reports/details/userrisk/?pagesize=25")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "GET"
@@ -166,12 +181,16 @@ class UserTableViewController: UITableViewController {
                                         tempRiskScore = riskScoreDetails["value"]!
                                     }
                                     
-                                    if let dateDetails = userDetails[3] as? [String: Any] {
+                                    if let dateDetails = userDetails[4] as? [String: Any] {
                                         tempDate = dateDetails["value"]!
                                     }
                                 }
                                 
                                 self.usersClean.append(User(appName: tempAppName, appInstance: tempAppInstance, riskLevel: tempRiskLevel, riskScore: tempRiskScore, userName: tempUserName, date: tempDate))
+                                
+                                DispatchQueue.main.async {
+                                    self.tableView.reloadData()
+                                }
                                 
                                 
                             }
